@@ -1,41 +1,19 @@
-from random import randint,choice
-
-words = ["boy","girl","car"]
-rng=randint(0,len(words)-1)
-rand_word=words[rng]
-lst=[]
+from random import choice,randint
+words = ["boy","uoy","lop"]
+random_word=words[randint(0,len(words))]
+characters=list(random_word)
+lst = []
 loop = True
 while loop:
-    rand_character=choice(rand_word)
-    rand_word.remove(rand_character)
+    rand_character = choice(characters)
+    characters.remove(rand_character)
     lst.append(rand_character)
-    if len(rand_word)== 0:
-        loop =False
-    print(lst)
-    answer = input("Answer:")
-    if answer == rand_word:
-        print ("correct")
-    else:
-
-        print("incorrect")
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    if len(characters)== 0:
+        loop = False
+print(*lst,sep="")
+answer= input("Your answer:")
+if answer == random_word:
+    print ("correct")
+else:
+    print ("incorrect")
 

@@ -11,7 +11,7 @@ while loop:
     lst.append(random_word)
     if len(words)== 0:
         loop = False
-print(*lst,sep="\n")
+    print(*lst,sep="")
 
 
 

@@ -7,7 +7,8 @@ for i,n in enumerate(district_population):
     print(a)
     district_density.append(a)
 print(district_density)
-sum_district_density = sum(district_density)
-sum_district_population =
 
+sum_district_population = sum (district_population)
+average_density = sum_district_population/(len(district_names)+1)
+print (average_density)
 

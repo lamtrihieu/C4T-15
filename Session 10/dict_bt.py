@@ -2,11 +2,7 @@ lap ={
     "HP":20,
     "Pell":50,
     "Macbook":12,
-    "Asus":30
-
-
-
-
+    "Asus":30,
 }
 # print(lap)
 # input_lap = input("Choose a computer:")
